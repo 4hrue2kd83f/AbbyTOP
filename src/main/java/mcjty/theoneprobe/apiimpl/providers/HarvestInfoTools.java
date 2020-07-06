@@ -27,11 +27,11 @@ public class HarvestInfoTools {
 
     private static final ResourceLocation ICONS = new ResourceLocation(TheOneProbe.MODID, "textures/gui/icons.png");
     private static String[] harvestLevels = new String[]{
-            "stone",
-            "iron",
-            "diamond",
-            "obsidian",
-            "cobalt"
+            "Stone",
+            "Iron",
+            "Diamond",
+            "Obsidian",
+            "Ruthenium"
     };
 
     private static final HashMap<String, ItemStack> testTools = new HashMap<>();
@@ -128,7 +128,7 @@ public class HarvestInfoTools {
                         .text(WARNING + ((harvestTool != null) ? harvestTool : "No tool"));
             } else {
                 horizontal.icon(ICONS, 16, offs, dim, dim, iconStyle)
-                        .text(WARNING + ((harvestTool != null) ? harvestTool : "No tool") + " (level " + harvestName + ")");
+                        .text(WARNING + ((harvestTool != null) ? harvestTool : "No tool") + " (Level " + harvestName + ")");
             }
         }
     }
